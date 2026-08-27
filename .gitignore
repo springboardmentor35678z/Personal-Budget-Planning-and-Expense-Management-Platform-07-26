@@ -1,0 +1,25 @@
+# Python
+server/.venv/
+server/__pycache__/
+server/**/*.pyc
+__pycache__/
+*.pyc
+
+# Node
+client/node_modules/
+node_modules/
+
+# Vite build
+client/dist/
+dist/
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
