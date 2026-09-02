@@ -1,0 +1,99 @@
+.quick-actions-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.action-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 12px;
+  border-radius: var(--radius-md);
+  gap: 8px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.action-tile:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.action-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Color schemes matching Figma */
+.action-tile.pink {
+  background-color: #fdf2f8;
+  color: #be185d;
+}
+.action-tile.pink .action-icon {
+  background-color: #fbcfe8;
+}
+
+.action-tile.green {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+.action-tile.green .action-icon {
+  background-color: #bbf7d0;
+}
+
+.action-tile.blue {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+.action-tile.blue .action-icon {
+  background-color: #bfdbfe;
+}
+
+.action-tile.purple {
+  background-color: #faf5ff;
+  color: #6b21a8;
+}
+.action-tile.purple .action-icon {
+  background-color: #e9d5ff;
+}
+
+.action-tile.yellow {
+  background-color: #fefce8;
+  color: #a16207;
+}
+.action-tile.yellow .action-icon {
+  background-color: #fef08a;
+}
+
+.action-tile.teal {
+  background-color: #f0fdfa;
+  color: #0f766e;
+}
+.action-tile.teal .action-icon {
+  background-color: #99f6e4;
+}

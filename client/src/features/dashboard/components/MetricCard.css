@@ -1,0 +1,85 @@
+.metric-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.metric-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.metric-icon-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-icon-badge.green {
+  background-color: var(--success-green-light);
+  color: var(--success-green);
+}
+
+.metric-icon-badge.red {
+  background-color: var(--danger-red-light);
+  color: var(--danger-red);
+}
+
+.metric-icon-badge.purple {
+  background-color: var(--purple-accent-light);
+  color: var(--purple-accent);
+}
+
+.metric-icon-badge.blue {
+  background-color: var(--primary-blue-light);
+  color: var(--primary-blue);
+}
+
+.metric-amount {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 12px;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.metric-subtext {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.metric-subtext.green {
+  color: var(--success-green);
+}
+
+.metric-subtext.red {
+  color: var(--danger-red);
+}
+
+.metric-subtext.purple {
+  color: var(--purple-accent);
+}
