@@ -92,6 +92,13 @@ function Sidebar() {
             <strong>chandana</strong>
             <small>chandana@gmail.com</small>
           </div>
+          <button
+            className="logout-btn"
+         onClick={() => console.log("Logout clicked")}
+         title="Logout"
+         >
+         ↪
+       </button>
         </div>
       </div>
     </aside>
