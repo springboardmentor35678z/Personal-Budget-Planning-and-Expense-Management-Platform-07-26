@@ -8,15 +8,26 @@ DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///./budgetbuddy.db')
 
 
 class Base(DeclarativeBase):
-	pass
+    pass
 
 
 engine = create_engine(
-	DATABASE_URL,
-	connect_args={'check_same_thread': False}
-	if DATABASE_URL.startswith('sqlite')
-	else {},
+    DATABASE_URL,
+    connect_args={'check_same_thread': False}
+    if DATABASE_URL.startswith('sqlite')
+    else {},
 )
-SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
+
+SessionLocal = sessionmaker(
+    bind=engine,
+    autoflush=False,
+    autocommit=False,
+)
+
+
+from src.entities import Todo, User, SavingsGoal
+
+Base.metadata.create_all(bind=engine)
+
 
 __all__ = ['Base', 'DATABASE_URL', 'SessionLocal', 'engine']
